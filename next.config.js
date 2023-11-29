@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images:{
-        domains:['links.papareact.com','cloud.appwrite.io']
-    }
-}
+  experimental: {
+    serverActions: true,
+  },
+  images: {
+    domains: ['links.papareact.com'],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
